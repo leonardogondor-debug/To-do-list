@@ -1,0 +1,55 @@
+Objetivo
+Desenvolver uma aplicação React funcional para gerenciamento de tarefas (To-do List), utilizando o Recoil como ferramenta de gerenciamento de estado global. O projeto deve permitir adicionar, listar, filtrar e remover tarefas, aplicando os conceitos aprendidos sobre átomos, seletores e o provedor RecoilRoot.
+
+Requisitos
+Estrutura do Projeto
+
+Criar o projeto com Vite ou Create React App.
+
+Organizar os arquivos em pastas como: components, atoms, selectors.
+
+Funcionalidades da Aplicação
+
+Campo para digitar e adicionar uma nova tarefa.
+
+Listagem das tarefas adicionadas.
+
+Cada tarefa deve ter um botão para ser marcada como concluída e outro para removê-la.
+
+Botões/filtros para exibir: 
+
+Todas as tarefas
+
+Apenas as concluídas
+
+Apenas as pendentes
+
+Estado Global com Recoil
+
+Utilizar RecoilRoot como provedor da aplicação.
+
+Criar um átomo para armazenar a lista de tarefas.
+
+Criar um átomo ou seletor para armazenar o filtro atual (todas, concluídas ou pendentes).
+
+Criar um seletor para retornar a lista de tarefas com base no filtro selecionado.
+
+Entrega
+Suba o projeto para um repositório público no GitHub.
+
+Compartilhe o link do repositório conforme as instruções da plataforma.
+
+Dicas
+Relembre os conceitos de átomos e seletores vistos na aula.
+
+Use useRecoilState para ler e atualizar estados.
+
+Utilize useRecoilValue para consumir seletores.
+
+Para organizar melhor, você pode criar componentes separados para: 
+
+Formulário de nova tarefa
+
+Lista de tarefas
+
+Filtro de visualização
