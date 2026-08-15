@@ -2,8 +2,11 @@ import { useRecoilState } from "recoil";
 import { todoListState } from "../atoms/todoAtom";
 
 export default function TodoItem({ todo }) {
+    //conecta ao estado geral da lista
     const [todos, setTodos] = useRecoilState(todoListState);
-    
+
+
+    //alterna o estado da tarefa
     const alternaCompleto = () => {
         setTodos(
             todos.map((t) =>
@@ -12,6 +15,7 @@ export default function TodoItem({ todo }) {
         );
     };
 
+    //remove tarefa
     const removeTodo = () => {
         setTodos(todos.filter((t) => t.id !== todo.id));
     };

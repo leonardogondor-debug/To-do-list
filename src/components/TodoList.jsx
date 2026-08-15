@@ -3,6 +3,7 @@ import { filtrarTodoListState } from "../selectors/filteredTodos";
 import TodoItem from "./TodoItem";
 
 export default function TodoList() {
+    //pega a lista ja filtrada
     const todos = useRecoilValue(filtrarTodoListState);
 
     return (

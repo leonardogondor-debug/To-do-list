@@ -3,12 +3,15 @@ import { useRecoilState } from "recoil";
 import { todoListState } from "../atoms/todoAtom";
 
 export default function TodoForm() {
+    //controla texto do input
     const [input, setInput] = useState("");
-    const [tosos, setTodos] = useRecoilState(todoListState);
+    //estado geral da lista com funcao atualizar
+    const [todos, setTodos] = useRecoilState(todoListState);
 
     const addTodo = () => {
         if (input.trim() === "") return;
-        setTodos([...todos, { id: Date.now(), text: input, completo: flase}]);
+        //adiciona nova tarefa na lista com id e estado nao completo 
+        setTodos([...todos, { id: Date.now(), text: input, completo: false}]);
         setInput("");
     };
 

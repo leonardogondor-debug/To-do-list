@@ -2,7 +2,8 @@ import { useRecoilState } from "recoil";
 import { filterState } from "../atoms/filterAtom";
 
 export default function Todofilter() {
-    const {filter, setFilter} = useRecoilState(filterState);
+    //cria variavel e funcao ligadas ao estado geral
+    const [filter, setFilter] = useRecoilState(filterState);
 
     return (
         <div>
