@@ -15,6 +15,6 @@ export const filtrarTodoListState = selector({
                 return todos.filter((todo) => !todo.completo);
             default:
                 return todos;
-        }
+        } 
     },
 });
