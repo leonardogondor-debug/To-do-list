@@ -5,12 +5,12 @@ import Todofilter from "./components/TodoFilter";
 
 function App() {
   return (
-    <RecoilRoot>
-      <h1>Lista de Tarefas</h1>
+    <div className="font-serif">
+      <h1 className="text-center text-4xl">Lista de Tarefas</h1>
       <TodoForm />
       <Todofilter />
       <TodoList />
-    </RecoilRoot>
+    </div>
   );
 }
 

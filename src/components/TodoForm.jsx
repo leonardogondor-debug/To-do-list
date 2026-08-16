@@ -16,9 +16,9 @@ export default function TodoForm() {
     };
 
     return (
-        <div>
-            <input value={input} onChange={(e) => setInput(e.target.value)} />
-            <button onClick={addTodo}>Adicionar</button>
+        <div className="mt-2 flex items-center justify-center">
+            <input className="m-1 p-1 rounded-md border-2 border-black" value={input} onChange={(e) => setInput(e.target.value)} />
+            <button className ="bg-green-400 m-1 p-1 rounded-md border-2 border-black hover:bg-green-200" onClick={addTodo}>Adicionar</button>
         </div>
     );
 };

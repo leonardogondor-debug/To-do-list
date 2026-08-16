@@ -21,14 +21,18 @@ export default function TodoItem({ todo }) {
     };
 
     return (
-        <li>
+        <li className={`flex items-center justify-between border-2 border-black p-2 m-2 rounded-md text-xl
+            ${todo.completo ? "bg-green-200" : "bg-white"}`
+        }>
             <span style={{ textDecoration: todo.completo ? "line-through" : "none"}}>
                 {todo.text}
             </span>
-            <button onClick={alternaCompleto}>
+            <div className="flex">
+            <button className ="bg-green-400 m-1 p-1 w-32 rounded-md border-2 border-black hover:bg-green-200" onClick={alternaCompleto}>
                 {todo.completo ? "Desmarcar" : "Concluir"}
             </button>
-            <button onClick={removeTodo}>Remover</button>
+            <button className ="bg-red-400 m-1 p-1 w-32 rounded-md border-2 border-black hover:bg-red-200" onClick={removeTodo}>Remover</button>
+            </div>
         </li>
     );
 }
